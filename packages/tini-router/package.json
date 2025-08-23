@@ -1,0 +1,13 @@
+{
+  "name": "@tini/router",
+  "version": "0.1.0",
+  "scripts": {
+  },
+  "author": "Tanmay Mazumdar <tanmaythemazumdar@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanmaythemazumdar/react-in-ssr.git",
+    "directory": "packages/router"
+  }
+}

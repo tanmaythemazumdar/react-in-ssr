@@ -1,0 +1,32 @@
+{
+  "name": "@tini/server-old",
+  "version": "0.1.0",
+  "scripts": {
+    "build:watch": "rolldown -w -c rolldown.config.ts"
+  },
+  "author": "Tanmay Mazumdar <tanmaythemazumdar@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanmaythemazumdar/react-in-ssr.git",
+    "directory": "packages/tini-server"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "@types/node": "^24.1.0",
+    "@types/ws": "^8.18.1",
+    "rolldown": "1.0.0-beta.29"
+  },
+  "dependencies": {
+    "@tinyhttp/app": "^2.5.2",
+    "@tinyhttp/cookie-parser": "^2.0.6",
+    "@tinyhttp/logger": "^2.1.0",
+    "compression": "^1.8.1",
+    "kolorist": "^1.8.0",
+    "lru-send": "^0.1.3",
+    "milliparsec": "^5.0.2",
+    "sade": "^1.8.1",
+    "sirv": "^3.0.1",
+    "ws": "^8.18.3"
+  }
+}

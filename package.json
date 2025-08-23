@@ -1,0 +1,24 @@
+{
+  "name": "react-in-ssr",
+  "version": "1.0.0",
+  "description": "A boilerplate of SSR with react",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanmaythemazumdar/react-in-ssr.git"
+  },
+  "keywords": [],
+  "author": "Tanmay Mazumdar <tanmaythemazumdar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tanmaythemazumdar/react-in-ssr/issues"
+  },
+  "homepage": "https://github.com/tanmaythemazumdar/react-in-ssr#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

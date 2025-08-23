@@ -1,0 +1,42 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "tini": "NODE_ENV=development tsx ./bin/index.ts"
+  },
+  "keywords": [],
+  "author": "Tanmay Mazumdar <tanmaythemazumdar@gmail.com>",
+  "bin": {
+    "plate": "./bin/index.ts"
+  },
+  "dependencies": {
+    "@tinyhttp/app": "^2.5.2",
+    "assets-webpack-plugin": "^7.1.1",
+    "cac": "^6.7.14",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "sirv": "^3.0.1"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.4.10",
+    "@rspack/core": "^1.4.10",
+    "@rspack/plugin-react-refresh": "^1.4.3",
+    "@types/assets-webpack-plugin": "^7.1.6",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@types/webpack-hot-middleware": "^2.25.10",
+    "css-loader": "^7.1.2",
+    "postcss-loader": "^8.1.1",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "webpack-dev-middleware": "^7.4.2",
+    "webpack-hot-middleware": "^2.26.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
