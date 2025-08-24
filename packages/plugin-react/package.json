@@ -1,5 +1,5 @@
 {
-  "name": "plugin-react",
+  "name": "@tini/plugin-react",
   "version": "0.1.0",
   "scripts": {
     "build": "tsup",
