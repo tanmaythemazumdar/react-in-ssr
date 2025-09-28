@@ -1,4 +1,4 @@
-import { resolve } from 'node:path'
+import { join, resolve } from 'node:path'
 
 export const CWD = process.cwd()
 
@@ -23,3 +23,14 @@ export const TS_CONFIG = resolve(CWD, 'tsconfig.json')
 export const NODE_ENV = process.env.NODE_ENV || ENV.PRODUCTION
 export const IS_PROD = NODE_ENV === ENV.PRODUCTION
 export const EXTS = ['.js', '.jsx', '.ts', '.tsx']
+
+export const PAGE_DIR = resolve(SRC_PATH, 'pages')
+export const ROOT = resolve(SRC_PATH, 'root.tsx')
+export const ENTRY_CLIENT = join(SRC_PATH, 'entry.client.tsx')
+export const ENTRY_SERVER = join(SRC_PATH, 'entry.server.tsx')
+
+export const CLIENT_LIB = {
+  client: join(__dirname, './lib/client', 'client.js'),
+  hmr: join(__dirname, './lib/client', 'hmr.js'),
+  refresh: join(__dirname, './lib/client', 'refresh.js')
+}

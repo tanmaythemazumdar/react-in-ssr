@@ -1,0 +1,13 @@
+{
+  "extends": "@tini/typescript-config/base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "dist",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "module": "ES2022",
+    "moduleResolution": "bundler"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
