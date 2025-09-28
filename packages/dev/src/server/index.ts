@@ -16,6 +16,7 @@ import { DevServer, TiniOptions } from '../types'
 
 import pkg from '../../package.json'
 import { getCompressionConfig } from './middlewares/compress'
+import { initSocket } from './socket'
 
 const onListen =
   (addr: Pick<AddressInfo, 'port'>, options: Pick<DevServer, 'https' | 'host'>): (() => void) =>
@@ -60,8 +61,7 @@ export const startServer = async (options: TiniOptions): Promise<TinyApp> => {
   }
 
   if (hot) {
-    // Initialize WebSocket Server
-    wss = new WebSocketServer({ server: server, path: '/_hmr' })
+    wss = initSocket(server)
   }
 
   server.listen(port, host, onListen({ port }, { host, https }))

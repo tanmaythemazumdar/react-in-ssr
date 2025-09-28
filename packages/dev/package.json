@@ -1,0 +1,38 @@
+{
+  "name": "@tini/dev",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx --watch src/cli.ts",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "Tanmay Mazumdar <tanmaythemazumdar@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@tini/eslint-config": "workspace:*",
+    "@tini/typescript-config": "workspace:*",
+    "@types/compression": "^1.8.1",
+    "@types/node": "^22.15.3",
+    "@types/ws": "^8.18.1",
+    "eslint": "^9.33.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@tinyhttp/app": "^2.5.2",
+    "@tinyhttp/cookie-parser": "^2.0.6",
+    "chokidar": "^4.0.3",
+    "compression": "^1.8.1",
+    "kolorist": "^1.8.0",
+    "lru-send": "^0.1.3",
+    "milliparsec": "^5.0.2",
+    "sade": "^1.8.1",
+    "sirv": "^3.0.1",
+    "ws": "^8.18.3"
+  }
+}

@@ -21,7 +21,7 @@ export type DevServer = {
   compress: boolean
   port: number
   host: string
-  historyApiFallback: boolean
+  // historyApiFallback: boolean
   hot: boolean
   https: boolean
   proxy: Record<string, Proxy>
